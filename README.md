@@ -3,7 +3,7 @@ DiTHold is a Python script for performing matrix multiplication on GPU. It can b
 
 ## Usage
 You can specify the number of GPUs, the size of the matrix, and the interval time between each operation through command line arguments. For example:
-``` python gpuhold.py --size 38000 --gpus 4,5,6,7 --interval 0.01 ```
+``` python dithold.py --size 38000 --gpus 4,5,6,7 --interval 0.01 ```
 
 In this example, the script will perform matrix multiplication on GPUs 4, 5, 6, and 7, with a matrix size of 38000x38000, and an interval of 0.01 seconds between each operation.
 
