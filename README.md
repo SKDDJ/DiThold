@@ -1,15 +1,15 @@
-# GPUHold
-GPUHold 是一个用于在 GPU 上执行矩阵乘法的 Python 脚本。它可以用于测试 GPU 的性能，或者在需要长时间占用 GPU 资源的情况下使用。
+# DiTHold
+DiTHold is a Python script for performing matrix multiplication on GPU. It can be used to test the performance of GPUs.
 
-## 使用方法
-你可以通过命令行参数来指定 GPU 的数量，矩阵的大小，以及每次操作之间的间隔时间。例如：
+## Usage
+You can specify the number of GPUs, the size of the matrix, and the interval time between each operation through command line arguments. For example:
 ``` python gpuhold.py --size 38000 --gpus 4,5,6,7 --interval 0.01 ```
 
-在这个例子中，脚本将在 GPU 4、5、6 和 7 上执行矩阵乘法，矩阵的大小为 38000x38000，每次操作之间的间隔时间为 0.01 秒。
+In this example, the script will perform matrix multiplication on GPUs 4, 5, 6, and 7, with a matrix size of 38000x38000, and an interval of 0.01 seconds between each operation.
 
-## 参数说明
---gpus: 用于执行矩阵乘法的 GPU 的 ID，多个 GPU ID 之间用逗号分隔。默认值为 '0'。
---size: 矩阵的大小。这个参数是必需的。
---interval: 每次操作之间的间隔时间，单位为秒。这个参数是必需的。
-## 注意事项
-请确保你的机器上已经安装了 PyTorch，并且支持 CUDA。此外，你指定的 GPU ID 必须是有效的，否则脚本将无法正常运行。
+## Parameters
+--gpus: IDs of GPUs used for matrix multiplication, separated by commas. Default value is '0'.
+--size: Size of the matrix. This parameter is required.
+--interval: Interval time between each operation, in seconds. This parameter is required.
+## Note
+Make sure you have PyTorch installed on your machine and CUDA support. Additionally, the GPU IDs you specify must be valid, otherwise the script will not run properly.
