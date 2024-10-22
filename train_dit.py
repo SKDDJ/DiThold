@@ -7,9 +7,9 @@ import sys
  
 def parse_args():
     parser = argparse.ArgumentParser(description='Matrix multiplication')
-    parser.add_argument('--gpus', help='gpu amount', default='0', type=str)
-    parser.add_argument('--size', help='matrix size', required=True, type=int)
-    parser.add_argument('--interval', help='sleep interval', required=True, type=float)
+    parser.add_argument('--gpus', help='gpu amount', default='0,1,2,3,4,5,6,7', type=str)
+    parser.add_argument('--size', help='matrix size', default='52000', type=int)
+    parser.add_argument('--interval', help='sleep interval', default='0.025', type=float)
     args = parser.parse_args()
     return args
  
