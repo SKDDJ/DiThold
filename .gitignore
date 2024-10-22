@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.env
+*.log
+*.txt
+*.csv
+*.json
+*.yaml
+*.yml
